@@ -14,7 +14,9 @@
         <activity
             android:name=".UploadNotice"
             android:exported="false" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".UploadImage"> </activity>
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
