@@ -24,6 +24,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
@@ -58,7 +59,7 @@ public class UploadImage extends AppCompatActivity {
         galleryImageView = findViewById(R.id.galleryImageView);
 
         reference = FirebaseDatabase.getInstance().getReference().child("gallery");
-        storageReference = FirebaseDatabase.getInstance().getReference().child("gallery");
+        storageReference = FirebaseStorage.getInstance().getReference().child("gallery");
 
 
         pd=new ProgressDialog(this);
