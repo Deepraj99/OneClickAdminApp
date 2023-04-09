@@ -25,14 +25,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
+        Intent intent;
         switch(view.getId()){
-            Intent intent;
+
             case R.id.addNotice:
                 intent = new Intent(MainActivity.this,UploadNotice.class);
                 startActivity(intent);
                 break;
 
-            case R.id.addNotice:
+            case R.id.addImage:
                 intent = new Intent(MainActivity.this,UploadImage.class);
                 startActivity(intent);
                 break;
