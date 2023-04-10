@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OneClickAdminApp">
         <activity
+            android:name=".UpdateTeacherActivity"
+            android:exported="false" />
+        <activity
             android:name=".faculty.AddTeacher"
             android:exported="false" />
         <activity
