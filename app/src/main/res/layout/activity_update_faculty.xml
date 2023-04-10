@@ -59,7 +59,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Mechanical Department"
+                android:text="Electronics and Communication Engineering"
                 android:gravity="center"
                 android:textSize="20sp"
                 android:textColor="@color/textColor"
@@ -75,21 +75,21 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/mechanicalDepartment"
+                android:id="@+id/eceDepartment"
                 android:visibility="gone"
                 android:nestedScrollingEnabled="false"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/mechNoData">
+                android:id="@+id/eceNoData">
                 <include layout="@layout/no_data_found"/>
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Physics Department"
+                android:text="Information Technology"
                 android:gravity="center"
                 android:textSize="20sp"
                 android:textColor="@color/textColor"
@@ -105,14 +105,14 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/physicsDepartment"
+                android:id="@+id/itDepartment"
                 android:visibility="gone"
                 android:nestedScrollingEnabled="false"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/physicsNoData">
+                android:id="@+id/itNoData">
                 <include layout="@layout/no_data_found"/>
             </LinearLayout>
 

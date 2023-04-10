@@ -13,10 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OneClickAdminApp">
         <activity
-            android:name=".AddTeacher"
+            android:name=".faculty.AddTeacher"
             android:exported="false" />
         <activity
-            android:name=".UpdateFaculty"
+            android:name=".faculty.UpdateFaculty"
             android:exported="false" />
         <activity
             android:name=".UploadPdfActivity"
