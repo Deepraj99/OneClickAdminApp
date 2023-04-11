@@ -28,7 +28,7 @@
             android:name=".UploadPdfActivity"
             android:exported="false" />
         <activity
-            android:name=".UploadNotice"
+            android:name=".notice.UploadNotice"
             android:exported="false" />
         <activity android:name=".UploadImage" />
         <activity

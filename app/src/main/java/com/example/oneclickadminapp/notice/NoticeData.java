@@ -1,4 +1,4 @@
-package com.example.oneclickadminapp;
+package com.example.oneclickadminapp.notice;
 
 public class NoticeData {
     String title, image, date, time, key;
