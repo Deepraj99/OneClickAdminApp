@@ -44,7 +44,7 @@ public class UpdateFaculty extends AppCompatActivity {
         eceNoData = findViewById(R.id.eceNoData);
         itNoData = findViewById(R.id.itNoData);
 
-        reference = FirebaseDatabase.getInstance().getReference().child("teacher");
+        reference = FirebaseDatabase.getInstance("https://oneclickadminapp-default-rtdb.asia-southeast1.firebasedatabase.app").getReference().child("teacher");
 
         csDepartment();
         eceDepartment();

@@ -58,7 +58,7 @@ public class UploadImage extends AppCompatActivity {
         uploadImage = findViewById(R.id.uploadImageBtn);
         galleryImageView = findViewById(R.id.galleryImageView);
 
-        reference = FirebaseDatabase.getInstance().getReference().child("gallery");
+        reference = FirebaseDatabase.getInstance("https://oneclickadminapp-default-rtdb.asia-southeast1.firebasedatabase.app").getReference().child("gallery");
         storageReference = FirebaseStorage.getInstance().getReference().child("gallery");
 
 

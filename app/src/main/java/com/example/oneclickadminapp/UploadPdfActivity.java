@@ -56,7 +56,7 @@ public class UploadPdfActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload_pdf);
 
-        databaseReference = FirebaseDatabase.getInstance().getReference();
+        databaseReference = FirebaseDatabase.getInstance("https://oneclickadminapp-default-rtdb.asia-southeast1.firebasedatabase.app").getReference();
         storageReference = FirebaseStorage.getInstance().getReference();
 
         pd = new ProgressDialog(this);
@@ -137,7 +137,7 @@ public class UploadPdfActivity extends AppCompatActivity {
 
     private void openGallery() {
         Intent intent = new Intent();
-        intent.setType("pdf/docs/ppt"); // use * as argument if it did not work on all devices
+        intent.setType("application/pdf"); // use * as argument if it did not work on all devices
         intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityIfNeeded(Intent.createChooser(intent,"Select Pdf File"), REQ);
     }
