@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.oneclickadminapp.faculty.AddTeacher;
 import com.example.oneclickadminapp.faculty.UpdateFaculty;
 import com.example.oneclickadminapp.notice.DeleteNoticeActivity;
 import com.example.oneclickadminapp.notice.UploadNotice;
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.faculty:
-                intent = new Intent(MainActivity.this, UpdateFaculty.class);
+                intent = new Intent(MainActivity.this, AddTeacher.class); //UpdateFaculty.class
                 startActivity(intent);
                 break;
             case R.id.deleteNotice:
