@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -65,6 +66,7 @@ public class UpdateFaculty extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 list1 = new ArrayList<>();
+//                Log.i("Deepak", list1.toString());
                 if (!snapshot.exists()) {
                     csNoData.setVisibility(View.VISIBLE);
                     csDepartment.setVisibility(View.GONE);
@@ -74,6 +76,7 @@ public class UpdateFaculty extends AppCompatActivity {
                     for (DataSnapshot snapshot1: snapshot.getChildren()) {
                         TeacherData data = snapshot1.getValue(TeacherData.class);
                         list1.add(data);
+//                        Log.i("Deepak", list1.toString());
                     }
                     csDepartment.setHasFixedSize(true);
                     csDepartment.setLayoutManager(new LinearLayoutManager(UpdateFaculty.this));

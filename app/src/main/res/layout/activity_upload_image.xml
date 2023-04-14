@@ -65,7 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Upload Image"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/white"
             android:layout_marginTop="16dp"
             android:textAllCaps="false"
             android:id="@+id/uploadImageBtn"/>
