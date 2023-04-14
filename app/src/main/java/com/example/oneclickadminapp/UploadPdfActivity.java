@@ -149,13 +149,13 @@ public class UploadPdfActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == REQ && resultCode == RESULT_OK){
             pdfData = data.getData();
-
             if(pdfData.toString().startsWith("content://")){
                 try {
                     Cursor cursor = null;
                     cursor = UploadPdfActivity.this.getContentResolver().query(pdfData, null, null, null);
                     if(cursor!=null && cursor.moveToFirst()){
                         pdfName = cursor.getString(cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME));
+                        pdfTextView.setText(pdfName);
 
                     }
                 } catch (Exception e) {
