@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(MainActivity.this, UploadNotice.class);
                 startActivity(intent);
                 break;
-            case R.id.addImage:
+            case R.id.addGalleryImage:
                 intent = new Intent(MainActivity.this,UploadImage.class);
                 startActivity(intent);
                 break;

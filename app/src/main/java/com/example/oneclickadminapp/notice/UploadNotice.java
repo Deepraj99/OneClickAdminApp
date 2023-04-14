@@ -51,7 +51,7 @@ public class UploadNotice extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload_notice);
 
-        reference = FirebaseDatabase.getInstance().getReference();
+        reference = FirebaseDatabase.getInstance("https://oneclickadminapp-default-rtdb.asia-southeast1.firebasedatabase.app").getReference();
         storageReference = FirebaseStorage.getInstance().getReference();
 
         pd = new ProgressDialog(this);

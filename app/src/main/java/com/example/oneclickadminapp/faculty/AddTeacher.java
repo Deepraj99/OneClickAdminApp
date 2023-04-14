@@ -61,7 +61,7 @@ public class AddTeacher extends AppCompatActivity {
 
         pd = new ProgressDialog(this);
 
-        reference= FirebaseDatabase.getInstance().getReference().child("teacher");
+        reference= FirebaseDatabase.getInstance("https://oneclickadminapp-default-rtdb.asia-southeast1.firebasedatabase.app").getReference().child("teacher");
         storageReference = FirebaseStorage.getInstance().getReference();
 
 
